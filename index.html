@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container{
+            margin: 0 auto;
+            width: 75vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "one one two three"
+                "four five six six";
+            gap: 10px;
+            background-color: #f4f5f2;
+            border: 10px solid #f4f5f2;
+            border-radius: 10px;
+        }
+
+        .one{grid-area: one;}
+        .two{grid-area: two;}
+        .three{grid-area: three;}
+        .four{grid-area: four;}
+        .five{grid-area: five;}
+        .six{grid-area: six;}
+
+        .grid-item img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item one"><img src="./Images/1.PNG" alt="Image 1"></div>
+        <div class="grid-item two"><img src="./Images/2.PNG" alt="Image 2"></div>
+        <div class="grid-item three"><img src="./Images/3.PNG" alt="Image 3"></div>
+        <div class="grid-item four"><img src="./Images/4.PNG" alt="Image 4"></div>
+        <div class="grid-item five"><img src="./Images/5.PNG" alt="Image 5"></div>
+        <div class="grid-item six"><img src="./Images/6.PNG" alt="Image 6"></div>
+    </div>
+</body>
+</html>
